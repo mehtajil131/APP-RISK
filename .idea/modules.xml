@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/APP-RISK.iml" filepath="$PROJECT_DIR$/APP-RISK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test_JUnit/Test_JUnit.iml" filepath="$PROJECT_DIR$/Test_JUnit/Test_JUnit.iml" />
+    </modules>
+  </component>
+</project>

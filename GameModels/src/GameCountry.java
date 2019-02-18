@@ -1,12 +1,20 @@
+import java.util.ArrayList;
+
 public class GameCountry {
 
 
     String country_name;
+
+    /*public GameCountry() {
+        this.neighbouring_countries = new ArrayList<>();
+    }*/
+
+    ArrayList<GameCountry> neighbouring_countries;
 /*
-    Continent continent;
+    GameContinent continent;
 */
-    int player_id;
-    int armies;
+    String player_id;
+    String armies_stationed;
 
     public String getCountry_name() {
         return country_name;
@@ -20,23 +28,31 @@ public class GameCountry {
         return continent;
     }
 
-    public void setContinent(Continent continent) {
+    public void setContinent(GameContinent continent) {
         this.continent = continent;
     }
 */
-    public int getPlayer_id() {
+    public String getPlayer_id() {
         return player_id;
     }
 
-    public void setPlayer_id(int player_id) {
+    public void setPlayer_id(String player_id) {
         this.player_id = player_id;
     }
 
-    public int getArmies() {
-        return armies;
+    public String getArmiesStationed() {
+        return armies_stationed;
     }
 
-    public void setArmies(int armies) {
-        this.armies = armies;
+    public void setArmies(String armies_stationed) {
+        this.armies_stationed = armies_stationed;
+    }
+
+    public ArrayList<GameCountry> getNeighbouring_countries() {
+        return neighbouring_countries;
+    }
+
+    public void setNeighbouring_countries(ArrayList<GameCountry> neighbouring_countries) {
+        this.neighbouring_countries = neighbouring_countries;
     }
 }

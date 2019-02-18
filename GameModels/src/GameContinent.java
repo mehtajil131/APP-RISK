@@ -4,10 +4,10 @@ public class GameContinent {
     String continent_value;
     String player_ID;
 
-    public GameContinent(String continent_name, String continent_value, String player_ID) {
-        this.continent_name = continent_name;
+    public GameContinent() {
+        /*this.continent_name = continent_name;
         this.continent_value = continent_value;
-        this.player_ID = player_ID;
+        this.player_ID = player_ID;*/
     }
 
     public String getContinent_name() {

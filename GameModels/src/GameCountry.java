@@ -15,6 +15,8 @@ public class GameCountry {
 */
     String player_id;
     String armies_stationed;
+    String coordinate_x;
+    String coordinate_y;
 
     public String getCountry_name() {
         return country_name;
@@ -54,5 +56,23 @@ public class GameCountry {
 
     public void setNeighbouring_countries(ArrayList<GameCountry> neighbouring_countries) {
         this.neighbouring_countries = neighbouring_countries;
+    }
+    public void addNeighbouring_country(GameCountry neighbouring_country) {
+        this.neighbouring_countries.add(neighbouring_country);
+    }
+    public String getCoordinate_x() {
+        return coordinate_x;
+    }
+
+    public void setCoordinate_x(String coordinate_x) {
+        this.coordinate_x = coordinate_x;
+    }
+
+    public String getCoordinate_y() {
+        return coordinate_y;
+    }
+
+    public void setCoordinate_y(String coordinate_y) {
+        this.coordinate_y = coordinate_y;
     }
 }

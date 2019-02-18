@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APP-RISK.iml" filepath="$PROJECT_DIR$/APP-RISK.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ControllerModels/ControllerModels.iml" filepath="$PROJECT_DIR$/ControllerModels/ControllerModels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GameController/GameController.iml" filepath="$PROJECT_DIR$/GameController/GameController.iml" />
       <module fileurl="file://$PROJECT_DIR$/GameModels/GameModels.iml" filepath="$PROJECT_DIR$/GameModels/GameModels.iml" />
       <module fileurl="file://$PROJECT_DIR$/Test_JUnit/Test_JUnit.iml" filepath="$PROJECT_DIR$/Test_JUnit/Test_JUnit.iml" />
     </modules>

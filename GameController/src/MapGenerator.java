@@ -1,7 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 
 public class MapGenerator {
@@ -95,6 +92,37 @@ public class MapGenerator {
     }
 
     public String WriteConquestFile(){
+        // this class creates a conquest File from existing map - we read contries and continents from global arraylists
+
+        Writer writer = null;
+
+        try {
+            writer = new BufferedWriter(new OutputStreamWriter(
+                    new FileOutputStream("ConquestMap.txt"), "utf-8"));
+            writer.write("[map]");
+            ((BufferedWriter) writer).newLine();
+            //here we most add information regarding GUI
+            writer.write("[Continents]");
+            ((BufferedWriter) writer).newLine();
+            for (GameContinent continent: continent_list) {
+                writer.write(continent.getContinent_name() + "=" + continent.getContinent_value());
+            }
+            ((BufferedWriter) writer).newLine();
+            writer.write("[Territories]");
+            ((BufferedWriter) writer).newLine();
+            for (GameCountry country : country_list) {
+                String neighbours = "";
+                for (GameCountry neighbour: country.getNeighbouring_countries()) {
+                    neighbours += ","+neighbour.getCountry_name();
+                }
+                writer.write(country.getCountry_name()+","+country.getCoordinate_x()+","+country.getCoordinate_y()+","
+                + neighbours);
+            }
+        } catch (IOException ex) {
+            // Report
+        } finally {
+            try {writer.close();} catch (Exception ex) {/*ignore*/}
+        }
         return null;
     }
 
